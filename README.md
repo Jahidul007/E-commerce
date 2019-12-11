@@ -1,6 +1,6 @@
 # shop_app
 
-A new Flutter application.
+E-commerce app using Flutter framework
 
 ## Getting Started
 
