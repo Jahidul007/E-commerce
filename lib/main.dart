@@ -33,9 +33,9 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
+        child: Text('It\'s me'),
 
       ),
-       // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
