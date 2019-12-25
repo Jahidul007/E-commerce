@@ -2,6 +2,11 @@ import 'package:flutter/material.dart';
 
 import '../widgets/products_grid.dart';
 
+enum FilterOptions {
+  Favorites,
+  All,
+}
+
 class ProductsOverviewScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -10,8 +15,12 @@ class ProductsOverviewScreen extends StatelessWidget {
         title: Text('MyShop'),
         actions: <Widget>[
           PopupMenuButton(
-            onSelected: (int selectedValue){
-              print(selectedValue);
+            onSelected: (FilterOptions selectedValue) {
+              if (selectedValue == FilterOptions.Favorites) {
+                //.........
+              } else {
+                //.......
+              }
             },
             icon: Icon(
               Icons.more_vert,
@@ -19,11 +28,11 @@ class ProductsOverviewScreen extends StatelessWidget {
             itemBuilder: (_) => [
               PopupMenuItem(
                 child: Text('Only Favorites'),
-                value: 0,
+                value: FilterOptions.Favorites,
               ),
               PopupMenuItem(
                 child: Text('Show All'),
-                value: 1,
+                value: FilterOptions.All,
               ),
             ],
           ),
