@@ -22,7 +22,7 @@ class _EditProductScreenState extends State<EditProductScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Edit Product'), 
+        title: Text('Edit Product'),  
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
