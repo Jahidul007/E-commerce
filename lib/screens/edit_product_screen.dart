@@ -2,27 +2,28 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class EditProductScreen extends StatefulWidget {
-   static const routeName = '/edit-product';
+  static const routeName = '/edit-product';
   @override
   _EditProductScreenState createState() => _EditProductScreenState();
 }
 
 class _EditProductScreenState extends State<EditProductScreen> {
- final _priceFocusNode = FocusNode();
- final _descriptionFocuseNode = FocusNode();
+  final _priceFocusNode = FocusNode();
+  final _descriptionFocuseNode = FocusNode();
 
- @override
+  @override
   void dispose() {
     // TODO: implement dispose
     _priceFocusNode.dispose();
     _descriptionFocuseNode.dispose();
     super.dispose();
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Edit Product'),  
+        title: Text('Edit Product'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -32,7 +33,7 @@ class _EditProductScreenState extends State<EditProductScreen> {
               TextFormField(
                 decoration: InputDecoration(labelText: 'Title'),
                 textInputAction: TextInputAction.next,
-                onFieldSubmitted: (_){
+                onFieldSubmitted: (_) {
                   FocusScope.of(context).requestFocus(_priceFocusNode);
                 },
               ),
@@ -41,7 +42,7 @@ class _EditProductScreenState extends State<EditProductScreen> {
                 textInputAction: TextInputAction.next,
                 keyboardType: TextInputType.number,
                 focusNode: _priceFocusNode,
-                onFieldSubmitted: (_){
+                onFieldSubmitted: (_) {
                   FocusScope.of(context).requestFocus(_descriptionFocuseNode);
                 },
               ),
@@ -50,6 +51,30 @@ class _EditProductScreenState extends State<EditProductScreen> {
                 maxLines: 3,
                 keyboardType: TextInputType.multiline,
                 focusNode: _descriptionFocuseNode,
+              ),
+              Row(
+                children: <Widget>[
+                  Container(
+                    height: 100,
+                    width: 100,
+                    margin: EdgeInsets.only(
+                      top: 8,
+                      right: 10,
+                    ),
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        width: 1,
+                        color: Colors.grey,
+                      ),
+                    ),
+                    child: Container(),
+                  ),
+                  TextFormField(
+                    decoration: InputDecoration(labelText: 'Image Url'),
+                    keyboardType: TextInputType.url,
+                    textInputAction: TextInputAction.done,
+                  ),
+                ],
               ),
             ],
           ),
