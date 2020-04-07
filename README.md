@@ -2,15 +2,11 @@
 
 E-commerce app using Flutter framework
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## Screen_Shots
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Screenshot_2020-04-08-00-05-15-959_com jahid shop_app](https://user-images.githubusercontent.com/26745548/78704255-6a2c5180-792d-11ea-8e5c-1114aecde24d.jpg)
+![Screenshot_2020-04-08-00-05-22-449_com jahid shop_app](https://user-images.githubusercontent.com/26745548/78704292-74e6e680-792d-11ea-9889-840cfb5661c3.jpg)
+![Screenshot_2020-04-08-00-05-30-856_com jahid shop_app](https://user-images.githubusercontent.com/26745548/78704304-77e1d700-792d-11ea-86f3-b3f1386ce2c1.jpg)
+![Screenshot_2020-04-08-00-05-34-635_com jahid shop_app](https://user-images.githubusercontent.com/26745548/78704308-7a443100-792d-11ea-8f99-047111ca5821.jpg)
+![Screenshot_2020-04-08-00-05-45-914_com jahid shop_app](https://user-images.githubusercontent.com/26745548/78704318-803a1200-792d-11ea-947c-acb8e8d74898.jpg)
